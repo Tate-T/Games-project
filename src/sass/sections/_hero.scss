@@ -1,0 +1,69 @@
+.hero {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+
+    &__title-Popular {
+        width: 386px;
+        height: 29px;
+        top: 116px;
+        left: 527px;
+        color: #000000;
+        font-weight: 400;
+        size: 24px;
+        line-height: 29px;
+        
+    }
+
+    &__line-year {
+
+        height: 2px;
+        background-color: black;
+        margin: 20px 0;
+        width: 536px;
+        top: 181px;
+        left: 452px;
+        border-width: 1px;
+
+    }
+
+    &__title-year {
+        width: 283px;
+        height: 20px;
+        top: 217px;
+        left: 578px;
+        font-family: Montserrat Alternates;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.5px;
+        letter-spacing: 0%;
+        
+    }
+
+    &__input-button-year {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 25px;
+
+    }
+
+    &__input-year {
+        width: 215px;
+        height: 15px;
+        border-radius: 20px 0 0 20px;
+        background: #D7D7D7;
+        border: none;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        font-size: 12px;
+        padding: 10px 45px 10px 10px;
+    }
+
+    &__search-year {
+        background-color: black;
+        height: 35px;
+        width: 35px;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+}
