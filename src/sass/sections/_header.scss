@@ -1,0 +1,65 @@
+.header {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 81px;
+  }
+
+  &__list {
+    display: flex;
+    margin-right: 361px;
+    gap: 50px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__arrow {
+    transform: rotate(180deg);
+    height: 9px;
+    stroke-width: 0.75px;
+    stroke: #000;
+    margin-left: 8px;
+  }
+
+  &__btn {
+    width: 40px;
+    height: 20px;
+    border-radius: 11px;
+    background: #7a7a7a;
+    margin-right: 51px;
+    padding: 0;
+  }
+
+&__sun{
+    width: 20.5px;
+height: 20px;
+    border-radius: 11px;
+}
+  &__greetings {
+    color: #000;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
