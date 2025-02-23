@@ -1,7 +1,11 @@
 .hero {
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
+
+
+    &__fullbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
     &__title-Popular {
@@ -13,6 +17,7 @@
         font-weight: 400;
         size: 24px;
         line-height: 29px;
+        font-family: Montserrat Alternates;
         
     }
 
@@ -38,25 +43,29 @@
         font-size: 16px;
         line-height: 19.5px;
         letter-spacing: 0%;
+        margin-top: 15px;
         
     }
 
-    &__input-button-year {
+    &__input-box-year {
         display: flex;
         justify-content: flex-start;
-        margin-top: 25px;
+        margin-top: 45px;
+        margin-bottom: 25px;
+        margin-right: 0px;
 
     }
 
     &__input-year {
-        width: 215px;
+        width: 170px;
         height: 15px;
         border-radius: 20px 0 0 20px;
         background: #D7D7D7;
         border: none;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
         font-size: 12px;
-        padding: 10px 45px 10px 10px;
+        padding: 10px 10px 10px;
+        font-family: Montserrat Alternates;
     }
 
     &__search-year {
@@ -66,4 +75,90 @@
         border-radius: 0px 20px 20px 0px;
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     }
+
+    &__title-comp {
+        width: 326;
+        height: 20;
+        top: 380px;
+        left: 557px;
+        font-family: Montserrat Alternates;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.5px;
+        margin-top: 15px;
+
+
+    }
+
+
+
+    &__check-comp {
+        width: 212;
+        height: 15;
+        top: 283px;
+        left: 796px;
+        font-family: Montserrat Alternates;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.63px;
+        letter-spacing: 0%;
+        text-align: right;
+        margin-left: 150px;
+        color: #039900;
+
+        
+                        
+    }
+
+
+    
+    &__check-year {
+        width: 212;
+        height: 15;
+        top: 283px;
+        left: 796px;
+        font-family: Montserrat Alternates;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.63px;
+        letter-spacing: 0%;
+        text-align: right;
+        margin-left: 100px;
+        color: #039900;
+
+        
+                        
+    }
+
+
+    &__input-box-comp {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 46px;
+        margin-bottom: 25px;
+        margin-right: 170px;
+        margin-left: 170px;
+
+    }
+    
+    &__input-comp {
+        width: 100px;
+        height: 15px;
+        border-radius: 20px 0 0 20px;
+        background: #D7D7D7;
+        border: none;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        font-size: 12px;
+        padding: 10px 10px 10px;
+        font-family: Montserrat Alternates;
+    }
+
+    &__search-comp {
+        background-color: black;
+        height: 35px;
+        width: 35px;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+
 }
