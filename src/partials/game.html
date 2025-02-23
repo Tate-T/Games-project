@@ -1,25 +1,49 @@
-<section class="game">
+<section id="game" class="game">
+  <div class="game__border"></div>
   <div class="container">
-    <h1 class="game__title">Камінь - ножиці - папір</h1>
-    <ul class="game__list1">
-      <li class="game__item"><button class="game__list-button"></button></li>
-      <li class="game__item"><button class="game__list-button"></button></li>
-      <li class="game__item"><button class="game__list-button"></button></li>
-    </ul>
+    <div class="game__box">
+      <h1 class="game__title">Камінь - ножиці - папір</h1>
+      <div class="game__list-box">
+        <ul class="game__list1">
+          <li class="game__item">
+            <button data-choice="Камінь" class="game__list-button">
+              <img class="game__img" src="../img/stone.webp" alt="stone" />
+            </button>
+          </li>
+          <li class="game__item">
+            <button data-choice="Ножиці" class="game__list-button">
+              <img
+                class="game__img"
+                src="../img/scissors.webp"
+                alt="scissors"
+              />
+            </button>
+          </li>
+          <li class="game__item">
+            <button data-choice="Папір" class="game__list-button">
+              <img class="game__img" src="../img/paper.webp" alt="paper" />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <h2 id="result-text" class="game__description">Виберіть варіант!</h2>
+      <button class="game__button">
+        <h2 id="show-computer-choice" class="game__button-text">
+          Варіант комп’ютера
+        </h2>
+      </button>
+    </div>
     <ul class="game__list2">
       <li class="game__item2">
         <h2 class="game__article">Рахунок:</h2>
       </li>
       <li class="game__item2">
-        <h2 class="game__article"></h2>
-        Комп’ютер - 0
+        <h2 id="computer-score" class="game__article">Комп’ютер - 0</h2>
       </li>
       <li class="game__item2">
-        <h2 class="game__article"></h2>
-        Ви - 0
+        <h2 id="user-score" class="game__article">Ви - 0</h2>
       </li>
     </ul>
-    <h2 class="game__description">Ви виграли раунд!</h2>
-    <button class="game__button"></button>
   </div>
+  <div class="game__border"></div>
 </section>
