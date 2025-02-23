@@ -1,38 +1,40 @@
 <section class="hero">
     <div class="container">
+    <div class="hero__fullbox">
       <h1 class="hero__title-Popular">Популярні інтерактивні ігри</h1>
       <div class="hero__line-year"></div>
         <h2 class="hero__title-year">Перевір в який рік ти народився</h2>
         <div class="hero__box-year">
-          <div class="hero__input-button-year">
+          <div class="hero__input-box-year">
             <input
               type="text"
               placeholder="Введіть рік народження"
               class="hero__input-year"
             />
             <button class="hero__search-year" type="button" aria-label="button confirm">
-              <svg class="hero__svg-year">
-                <use href="./images/sprite.svg#search"></use>
-              </svg>
+                <img src="../img/search.webp" alt="search">
             </button>
+            <p class="hero__check-year">Ви народилися у високосний рік!</p>
           </div>
-          <p class="hero__text-year">Введіть свій рік народження</p>
+
         </div>
-     <h2 class="hero__title-Comp">Вгадай число, яке загадав комп’ютер</h2>
-        <div class="hero__flex-Comp">
-          <div class="hero__input-shadow-Comp">
+        <div class="hero__line-year"></div> 
+     <h2 class="hero__title-comp">Вгадай число, яке загадав комп’ютер</h2>
+        <div class="hero__flex-comp">
+          <div class="hero__input-box-comp">
             <input
               type="text"
               placeholder="Введіть число"
-              class="hero__input-Comp"
+              class="hero__input-comp"
             />
-            <button class="hero__search-bg-Comp" aria-label="button confirm">
-               <svg class="hero__icon-Comp">
-                 <use href="./images/sprite.svg#search"></use>
-               </svg>
+            <button class="hero__search-comp" aria-label="button confirm">
+               <img src="../img/search.webp" alt="search">
             </button>
-          </div>
-          <p class="hero__text-Comp">Введіть число</p>
+            <p class="hero__check-comp">Вітаю, ви вгадали число! (number) </p>
         </div>
+        
+        </div>
+        <div class="hero__line-year"></div> 
+    </div>
     </div>
     </section>
