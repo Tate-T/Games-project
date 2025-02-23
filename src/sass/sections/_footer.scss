@@ -1,0 +1,78 @@
+.footer {
+  background: #fff;
+
+  &__logo {
+    width: 165px;
+    height: 70px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-right: 185px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__list {
+    padding-top: 61px;
+padding-bottom: 59px;
+  }
+
+  &__contact {
+    color: #000;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-weight: 400;
+line-height: 170%; /* 20.4px */
+  }
+
+  &__regist {
+    max-width: 345px;
+    margin-top: 97px;
+    margin-left: 130px;
+  }
+
+  &__box {
+    display: flex;
+
+  }
+
+  &__mail {
+    border-radius: 20px;
+    padding: 10px 60px 10px 10px;
+    gap: 10px;
+    background: #D7D7D7;
+    border: none;
+    width: 204px;
+    margin-right: 36px;
+
+    ::placeholder {
+      font-size: 12px;
+      line-height: normal;
+    }
+}
+
+&__btn {
+    border-radius: 20px;
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+font-family: "Montserrat Alternates";
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  &__description {
+    color: #000;
+font-family: "Montserrat Alternates";
+font-size: 6px;
+font-weight: 400;
+line-height: normal;
+margin-top: 18px;
+margin-left: 7px;
+  }
+}
