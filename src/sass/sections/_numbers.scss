@@ -6,9 +6,27 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-text-align: center;
+margin-left: 450px;
 margin-bottom: 36px;
 
+}
+
+.fix{
+   display: flex;
+  justify-content: center;
+
+}
+
+.num{
+    color: #000;
+
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 36px; 
 }
 
 .text{
@@ -76,5 +94,5 @@ margin-top: 36px;
 .game2{
     display: flex;
     gap:38px ;
-    margin-left: 200px;
+ justify-content: center;
 }
