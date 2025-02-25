@@ -5,19 +5,13 @@
     padding-top: 36px;
     padding-bottom: 46px;
   }
-  &__border {
-    border-top: solid black 2px;
-    width: 536px;
-    display: flex;
-    justify-self: center;
-  }
+
   &__box {
     display: flex;
     gap: 36px;
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    border: solid purple 1px;
     margin-left: 200px;
   }
   &__list-box {
@@ -27,10 +21,8 @@
   &__list1 {
     display: flex;
     gap: 38px;
-    border: solid red 1px;
   }
   &__list2 {
-    border: solid blue 1px;
     display: flex;
     flex-direction: column;
     align-self: center;
