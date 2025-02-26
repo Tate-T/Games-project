@@ -1,0 +1,74 @@
+.dino{
+display: flex;
+justify-content: center;
+padding-bottom: 36px;
+
+&__title {
+    color: #000;
+font-family: "Montserrat Alternates";
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+}
+
+&__game {
+    width: 720px;
+    height: 241px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+
+&__dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/dinosaur.webp);
+    background-size: 50px 50px;
+    position: relative;
+    top: 190px;
+}
+
+&__cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(../img/cactus.webp);
+    background-size: 35px 45px;
+    position: relative;
+    top: 151px;
+    left: 580px;
+    animation: cactusMove 1.3s infinite linear;
+}
+@keyframes cactusMove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 1s linear;
+}
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+      top: 150px;  
+    }
+}
+
+
+}
+
+
