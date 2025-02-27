@@ -13,7 +13,7 @@ function checkBiggestNumber() {
         document.getElementById("result").textContent = "Будь ласка, введіть дійсні числа.";
     } else {
         const biggestNumber = Math.max(imp1, imp2, imp3);
-        document.getElementById("result").textContent =  biggestNumber;
+        document.getElementById("result223").textContent =  biggestNumber;
     }
 }
 
