@@ -1,21 +1,7 @@
 .team {
-    position: relative;
+    position: relative; 
   
-    padding: 36px 0;
-  
-    &::after {
-      content: "";
-  
-      position: absolute;
-      top: 377px;
-      left: 50%;
-  
-      width: 536px;
-      height: 1px;
-  
-      transform: translate(-50%, 0);
-      background-color: #000;
-    }
+    
 
     &__left-photo {
         transform: rotate(270deg);
