@@ -1,34 +1,41 @@
-.dino{
-display: flex;
-justify-content: center;
-padding-bottom: 36px;
+.dino {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 36px;
 
-&__title {
+  &__border {
+    border-top: solid black 2px;
+    width: 536px;
+    display: flex;
+    justify-self: center;
+    padding-bottom: 36px;
+  }
+  &__title {
     color: #000;
-font-family: "Montserrat Alternates";
-font-size: 16px;
-font-weight: 400;
-line-height: normal;
-text-align: center;
-}
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
 
-&__game {
+  &__game {
     width: 720px;
     height: 241px;
     border-bottom: 1px solid black;
     margin: auto;
-}
+  }
 
-&__dino {
+  &__dino {
     width: 50px;
     height: 50px;
     background-image: url(../img/dinosaur.webp);
     background-size: 50px 50px;
     position: relative;
     top: 190px;
-}
+  }
 
-&__cactus {
+  &__cactus {
     width: 20px;
     height: 40px;
     background-image: url(../img/cactus.webp);
@@ -37,38 +44,34 @@ text-align: center;
     top: 151px;
     left: 580px;
     animation: cactusMove 1.3s infinite linear;
-}
-@keyframes cactusMove {
+  }
+  @keyframes cactusMove {
     0% {
-        left: 580px;
+      left: 580px;
     }
     100% {
-        left: -20px;
+      left: -20px;
     }
-}
+  }
 
-.jump {
+  .jump {
     animation: jump 1s linear;
-}
-@keyframes jump {
+  }
+  @keyframes jump {
     0% {
-        top: 150px;
+      top: 150px;
     }
-    30%{
-        top: 130px;
+    30% {
+      top: 130px;
     }
     50% {
-        top: 80px;
+      top: 80px;
     }
     80% {
-        top: 130px;
+      top: 130px;
     }
     100% {
-      top: 150px;  
+      top: 150px;
     }
+  }
 }
-
-
-}
-
-
