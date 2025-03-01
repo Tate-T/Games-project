@@ -1,21 +1,17 @@
 const openBtn = document.querySelector(".open__button");
-const closeBtn = document.querySelector(".close__button");
+const closeBtn = document.querySelector(".modal__close");
 const backdrop = document.querySelector(".backdrop");
-const getBody = document.querySelector("body");
 
 openBtn.addEventListener("click", () => {
-  backdrop.style.display = "flex";
-  getBody.classList.add("show-modal");
+  backdrop.classList.add("backdrop--visible");
 });
 
 closeBtn.addEventListener("click", () => {
-  backdrop.style.display = "none"; 
-  getBody.classList.remove("show-modal");
+  backdrop.classList.remove("backdrop--visible");
 });
 
 backdrop.addEventListener("click", (event) => {
   if (event.target === backdrop) {
-    backdrop.style.display = "none";
-    getBody.classList.remove("show-modal");
+    backdrop.classList.remove("backdrop--visible");
   }
 });
