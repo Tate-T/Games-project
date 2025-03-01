@@ -6,11 +6,12 @@
     padding-top: 36px;
     padding-bottom: 36px;
   }
-  &__border {
+    &__border {
     border-top: solid black 2px;
     width: 536px;
-    left: 34%;
-    position: absolute;
+    display: flex;
+    justify-self: center;
+    padding-bottom: 36px;
   }
   &__title {
     color: #000;
