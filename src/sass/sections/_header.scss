@@ -63,4 +63,94 @@ height: 20px;
     font-weight: 400;
     line-height: normal;
   }
+
+
+  &__theme {
+    display: inline-flex;
+    justify-content: flex-end;
+    position: relative;
+
+    width: 40px;
+    height: 20px;
+    margin-right: auto;
+
+    border-radius: 11px;
+    background: gray;
+
+    &-changer {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    &-slider {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        cursor: pointer;
+        border-radius: 11px;
+        background-color: gray;
+        transition: 0.3s;
+    }
+
+    &-slider::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        width: 20.5px;
+        height: 20px;
+        cursor: pointer;
+
+        border: solid 0.5px black;
+        border-radius: 50%;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    &-changer:checked + &-slider::before {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        width: 20.5px;
+
+        transform: translateX(20px);
+        background-color: black;
+    }
+
+    &-icon {
+        display: flex;
+        width: 20.533px;
+        height: 20.667px;
+        padding: 3px 3px 3px 3px;
+        border-radius: 15.033px;
+        position: absolute;
+        z-index: 1;
+
+        &-sun {
+            display: block;
+            left: 0;
+        }
+
+        &-moon {
+            display: none;
+            right: 0;
+        }
+    }
+
+    &-changer:checked + &-slider > &-icon-sun {
+        display: none;
+    }
+
+    &-changer:checked + &-slider > &-icon-moon {
+        display: block;
+    }
+}
+
 }
