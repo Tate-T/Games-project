@@ -6,6 +6,13 @@
     padding-top: 36px;
     padding-bottom: 36px;
   }
+    &__border {
+    border-top: solid black 2px;
+    width: 536px;
+    display: flex;
+    justify-self: center;
+    padding-bottom: 36px;
+  }
   &__title {
     color: #000;
     font-family: "Montserrat Alternates";

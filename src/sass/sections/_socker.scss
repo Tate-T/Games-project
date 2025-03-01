@@ -42,7 +42,7 @@
   &__border {
     border-top: solid black 2px;
     width: 536px;
-    left: 34%;
-    position: relative;
+    display: flex;
+    justify-self: center;
   }
 }
