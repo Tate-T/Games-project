@@ -1,7 +1,10 @@
-.dino {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 36px;
+.dino{
+display: flex;
+justify-content: center;
+
+.container {
+    padding-bottom: 36px;
+}
 
   &__border {
     border-top: solid black 2px;
@@ -61,17 +64,27 @@
     0% {
       top: 150px;
     }
-    30% {
-      top: 130px;
+    20% {
+        top: 140px;
+    }
+    40% {
+        top: 90px;
     }
     50% {
-      top: 80px;
+        top: 70px;
+    }
+    60% {
+        top: 90px;
     }
     80% {
-      top: 130px;
+        top: 140px;
+    }
+    90% {
+        top: 145px;
     }
     100% {
-      top: 150px;
+        top: 150px;
+
     }
   }
 }
