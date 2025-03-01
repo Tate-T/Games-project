@@ -1,9 +1,22 @@
 const dino = document.querySelector(".dino__dino");
+const gameArea = document.querySelector(".dino__game");
 const cactus = document.querySelector(".dino__cactus");
 let isJumping = false;
 let isGameOver = false;
+let isGameStarted = false;
+let gameLoop;
 
-// Додаємо слухач натискання клавіші для стрибка
+function startGame() {
+    if (!isGameStarted) {
+        isGameStarted = true;
+        isGameOver = false;
+        cactus.style.animation = "cactusMove 1.3s infinite linear";
+        checkCollision();
+    }
+}
+
+gameArea.addEventListener("click", startGame);
+
 document.addEventListener("keydown", (e) => {
     if (e.code === "Space" && !isJumping && !isGameOver) {
         e.preventDefault();
@@ -12,17 +25,18 @@ document.addEventListener("keydown", (e) => {
 });
 
 function jump() {
+    if (isJumping) return;
     isJumping = true;
     dino.classList.add("jump");
     
     setTimeout(() => {
         dino.classList.remove("jump");
         isJumping = false;
-    }, 1000); // Час має співпадати з анімацією в CSS
+    }, 1000); 
 }
 
 function checkCollision() {
-    const gameLoop = setInterval(() => {
+    gameLoop = setInterval(() => {
         const dinoRect = dino.getBoundingClientRect();
         const cactusRect = cactus.getBoundingClientRect();
 
@@ -32,11 +46,11 @@ function checkCollision() {
             dinoRect.bottom > cactusRect.top
         ) {
             isGameOver = true;
-            alert("Гру закінчено! Оновіть сторінку, щоб почати заново.");
+            isGameStarted = false;
             clearInterval(gameLoop);
-            cactus.style.animationPlayState = "paused";
+            cactus.style.animation = "none";
+            alert("Гру закінчено! Оновіть сторінку, щоб почати заново.");
         }
     }, 10);
 }
 
-checkCollision();
