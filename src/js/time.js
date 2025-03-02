@@ -3,49 +3,16 @@
 
 
 
-const dayy = document.querySelector(".dayy")
-const hour = document.querySelector(".hour")
-const min = document.querySelector(".min")
-const sec = document.querySelector(".sec")
+const dayy = document.querySelector("#dayy")
+const hour = document.querySelector("#hour")
+const min = document.querySelector("#min")
+const sec = document.querySelector("#sec")
 
 
 const immp = document.getElementById("immp")
 const day = document.getElementById("day")
 const dyt = document.getElementById("dut")
 
-
-
-
-
-
-    
-
-//    dyt.addEventListener("click", (event) =>{
-// if(immp.value <= 60 ){
-//     sec.textContent = immp.value ;
-//     console.log(day)
-// }
-
-// if(immp.value >= 60 ){
-//     sec.textContent = immp.value - 60 ;
-//     console.log(day)
-// }
-
-// if(immp.value <= 60  ){
-//     min.textContent = 1 ;
-//     console.log(day)
-// }
-
-
-// if(immp.value >= 120 ){
-//     min.textContent = immp.value - 120 ;
-//     console.log(day)
-// }
-
-
-//    })
- 
- 
 
 
 dyt.addEventListener("click", () => {

@@ -1,8 +1,8 @@
 
 function checkBiggestNumber() {
-    const imp12 = document.querySelector(".imp1")
-    const imp22 = document.querySelector(".imp2")
-    const imp32 = document.querySelector(".imp3")
+    const imp12 = document.querySelector("#imp1")
+    const imp22 = document.querySelector("#imp2")
+    const imp32 = document.querySelector("#imp3")
 
     const imp1 = Number(imp12.value) || 0
     const imp2 = Number(imp22.value) || 0
@@ -17,7 +17,7 @@ function checkBiggestNumber() {
     }
 }
 
-document.querySelector(".imp1").addEventListener("blur", checkBiggestNumber);
-document.querySelector(".imp2").addEventListener("blur", checkBiggestNumber);
-document.querySelector(".imp3").addEventListener("blur", checkBiggestNumber);
+document.querySelector("#imp1").addEventListener("blur", checkBiggestNumber);
+document.querySelector("#imp2").addEventListener("blur", checkBiggestNumber);
+document.querySelector("#imp3").addEventListener("blur", checkBiggestNumber);
 
