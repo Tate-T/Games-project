@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Magic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/Games-project/assets/index-6244d200.js"></script>
+    <link rel="stylesheet" href="/Games-project/assets/index-f29a448a.css">
+  </head>
+
+  <body>
+    <header class="header">
+    <div class="container">
+        <nav class="header__navigation">
+            <img src="../img/logo.webp" alt="" class="header__logo">
+            <ul class="header__list">
+                <li class="header__item">
+                    <p class="header__text">Інтерактив</p>
+                    <img src="../img/arrow.webp" alt="" class="header__arrow">
+                </li>
+                <li class="header__item">
+                    <p class="header__text">Наша команда</p>
+                </li>
+                <li class="header__item">
+                    <p class="header__text">Контакти</p>
+                </li>
+            </ul>
+            <label class="header__theme">
+                <input class="header__theme-changer" type="checkbox"></input>
+                <span class="header__theme-slider">
+                  <img class="header__theme-icon header__theme-icon-sun" src="../img/sun-icon.webp" alt="Light theme" value="light">
+                  <img class="header__theme-icon header__theme-icon-moon" src="../img/moon-icon.webp" alt="Black theme" value="dark">
+                </span>
+            </label>
+            <p class="header__greetings">Вітаємо, User!</p>
+        </nav>
+    </div>
+</header>
+    <section class="hero">
+    <div class="container">
+    <div class="hero__fullbox">
+      <h1 class="hero__title-Popular">Популярні інтерактивні ігри</h1>
+      <div class="hero__line-year"></div>
+        <h2 class="hero__title-year">Перевір в який рік ти народився</h2>
+        <div class="hero__box-year">
+          <div class="hero__input-box-year">
+            <input
+              type="text"
+              placeholder="Введіть рік народження"
+              class="hero__input-year"
+              id="heroInput"
+            />
+            <button id="checkButton" class="hero__search-year" type="button" aria-label="button confirm">
+                <img src="../img/search.webp" alt="search">
+            </button>
+            <p id="result" class="hero__check-year">Ви народилися у високосний рік!</p>
+          </div>
+
+        </div>
+        <div class="hero__line-year"></div> 
+     <h2 class="hero__title-comp">Вгадай число, яке загадав комп’ютер</h2>
+        <div class="hero__flex-comp">
+          <div class="hero__input-box-comp">
+            <input
+              type="text"
+              placeholder="Введіть число"
+              class="hero__input-comp"
+            />
+            <button class="hero__search-comp" aria-label="button confirm">
+               <img src="../img/search.webp" alt="search">
+            </button>
+            <p class="hero__check-comp">Вітаю, ви вгадали число! (number) </p>
+        </div>
+        
+        </div>
+        <div class="hero__line-year"></div> 
+    </div>
+    </div>
+    </section>
+    <section id="game" class="game">
+  <div class="container">
+    <div class="game__box">
+      <h1 class="game__title">Камінь - ножиці - папір</h1>
+      <div class="game__list-box">
+        <ul class="game__list1">
+          <li class="game__item">
+            <button data-choice="Камінь" class="game__list-button">
+              <img class="game__img" src="../img/stone.webp" alt="stone" />
+            </button>
+          </li>
+          <li class="game__item">
+            <button data-choice="Ножиці" class="game__list-button">
+              <img
+                class="game__img"
+                src="../img/scissors.webp"
+                alt="scissors"
+              />
+            </button>
+          </li>
+          <li class="game__item">
+            <button data-choice="Папір" class="game__list-button">
+              <img class="game__img" src="../img/paper.webp" alt="paper" />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <h2 id="result-text" class="game__description">Виберіть варіант!</h2>
+      <button class="game__button">
+        <h2 id="show-computer-choice" class="game__button-text">
+          Варіант комп’ютера
+        </h2>
+      </button>
+    </div>
+    <ul class="game__list2">
+      <li class="game__item2">
+        <h2 class="game__article">Рахунок:</h2>
+      </li>
+      <li class="game__item2">
+        <h2 id="computer-score" class="game__article">Комп’ютер - 0</h2>
+      </li>
+      <li class="game__item2">
+        <h2 id="user-score" class="game__article">Ви - 0</h2>
+      </li>
+    </ul>
+  </div>
+  <div class="game__border"></div>
+</section>
+
+    <section class="calc">
+  <div class="calc__border"></div>
+  <div class="container">
+    <h1 class="calc__title">Калькулятор</h1>
+    <div class="calc__box">
+      <input type="text" class="calc__number1" placeholder="Введіть число" />
+      <ul class="calc__list">
+        <li class="calc__item">
+          <button class="calc__button-expression" type="button">+</button>
+        </li>
+        <li class="calc__item">
+          <button class="calc__button-expression" type="button">*</button>
+        </li>
+        <li class="calc__item">
+          <button class="calc__button-expression" type="button">-</button>
+        </li>
+        <li class="calc__item">
+          <button class="calc__button-expression" type="button">/</button>
+        </li>
+      </ul>
+      <input type="text" class="calc__number1" placeholder="Введіть число" />
+      <button class="calc__button-expression" type="button">=</button>
+      <input type="text" class="calc__number2" placeholder="Резуьтат" />
+    </div>
+  </div>
+  <div class="calc__border"></div>
+</section>
+
+    <section class="time">
+  <div class="container">
+    <h2 class="time__calk">Калькулятор часу</h2>
+    <div class="time__box">
+      <input
+        type="text"
+        id="immp"
+        class="time__input"
+        placeholder="Введіть число"
+      />
+      <p class="time__text" id="day">
+        <span id="dayy" class="time__equality">0</span> дн.
+        <span id="hour" class="time__equality">00</span>:
+        <span id="min" class="time__equality">00</span>:
+        <span id="sec" class="time__equality">00</span>
+      </p>
+      <button class="time__button" id="dut" type="button">йоу?</button>
+    </div>
+  </div>
+</section>
+
+    <section class="dino">
+  <div class="container">
+    <div class="dino__border"></div>
+    <h3 class="dino__title">Google динозавр</h3>
+    <div class="dino__game">
+      <div class="dino__dino"></div>
+      <div class="dino__cactus"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="socker">
+  <div class="socker__border"></div>
+  <div class="container">
+    <h2 class="socker__title">Футбол</h2>
+    <div class="socker__field">
+      <img class="socker__ball" src="../img/football-ball.webp" alt="ball" />
+    </div>
+  </div>
+  <div class="socker__border"></div>
+</section>
+
+    <section class="numbers">
+  <div class="container">
+    <h2 class="numbers__logo">Введіть 3 числа</h2>
+    <ul class="numbers__list">
+      <li class="numbers__item">
+        <input type="text" class="numbers__input" id="imp1" placeholder="Введіть число" />
+      </li>
+      <li class="numbers__item">
+        <input type="text" class="numbers__input" id="imp2"  placeholder="Введіть число" />
+      </li>
+      <li class="numbers__item">
+        <input type="text" class="numbers__input" id="imp3" placeholder="Введіть число" />
+      </li>
+    </ul>
+    <div class="numbers__fix">
+      <p class="numbers__text">Найбільше число, яке ви ввели -  </p>
+      <p class="numbers__num" id="result223">  </p>
+    </div>
+    <div class="numbers__border"></div>
+  </div>
+</section>
+
+    <section id="acquaintance" class="team">
+  <div class="container">
+    <h2 id="our-team-anchor" class="team__title">Наша команда</h2>
+    <div class="team__flex">
+      <button class="team__btn team__btn--left" aria-label="slide to left">
+        <img src="../img/arrow.webp" alt="" class="team__left-photo" />
+      </button>
+      <ul class="team__photos">
+        <li class="team__photo">
+          <div class="team__img">
+            <img
+              src="../img/timomomoha.webp"
+              alt="timoha"
+              class="team__img--tima"
+            />
+          </div>
+        </li>
+        <li class="team__photo">
+          <div class="team__img team__hidden team__img--artur">
+            <img
+              src="../img/olehka.webp"
+              alt="olya olya olya"
+              class="team__img--olya"
+            />
+          </div>
+        </li>
+        <li class="team__photo">
+          <div class="team__img team__hidden">
+            <img
+              src="../img/photo_2025-02-27_19-56-49.webp"
+              alt="kirilloid"
+              class="team__img--kirril"
+            />
+          </div>
+        </li>
+        <li class="team__photo">
+          <div class="team__img team__hidden">
+            <img
+              src="../img/bariis.webp"
+              alt="vagrus"
+              class="team__img--boris"
+            />
+          </div>
+        </li>
+      </ul>
+      <div class="team__photo"></div>
+      <button class="team__btn team__btn--right" aria-label="slide to right">
+        <img src="../img/arrow.webp" alt="" class="team__right-photo" />
+      </button>
+    </div>
+    <ul class="team__names">
+      <li class="team__name">
+        <p class="team__student-name">Тіма</p>
+      </li>
+      <li class="team__name">
+        <p class="team__student-name team__hidden">Ольга</p>
+      </li>
+      <li class="team__name">
+        <p class="team__student-name team__hidden">
+          у меня ослепнул глаз(так сказал тима зделать он тимлмд)
+        </p>
+      </li>
+      <li class="team__name">
+        <p class="team__student-name team__hidden">Вагус</p>
+      </li>
+    </ul>
+    <ul class="team__work-list">
+      <li class="team__work-item">
+        <p class="team__work-text">Teamlead</p>
+      </li>
+      <li class="team__work-item">
+        <p class="team__work-text team__hidden">Scrum Master, Developer</p>
+      </li>
+      <li class="team__work-item">
+        <p class="team__work-text team__hidden">Developer</p>
+      </li>
+      <li class="team__work-item">
+        <p class="team__work-text team__hidden">Developer</p>
+      </li>
+    </ul>
+    <ul class="team__list">
+      <li class="team__item">
+        <div class="team__page team__page--curr"></div>
+      </li>
+      <li class="team__item">
+        <div class="team__page"></div>
+      </li>
+      <li class="team__item">
+        <div class="team__page"></div>
+      </li>
+      <li class="team__item">
+        <div class="team__page"></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="science">
+  <div class="container">
+    <div class="science__border"></div>
+    <h2 class="science__title">Обери вченого/их</h2>
+    <ul class="science__list">
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+      <li class="science__item"></li>
+    </ul>
+    <ul class="science__list2">
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">Які вчені народилися в 19 ст.</h2>
+        </button>
+      </li>
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">Знайти рік народження Albert Einshtein</h2>
+        </button>
+      </li>
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">Відсортувати вчених за алфавітом</h2>
+        </button>
+      </li>
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">
+            Знайти вчених, прізвища яких починаються на на літеру “С”
+          </h2>
+        </button>
+      </li>
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">
+            Відсортувати вчених за кількістю прожитих років
+          </h2>
+        </button>
+      </li>
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">
+            Видалити всіх вчених, ім’я яких починається на “А”
+          </h2>
+        </button>
+      </li>
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">
+            Знайти вченого, який народився найпізніше
+          </h2>
+        </button>
+      </li>
+      <li class="science__item2">
+        <button class="science__button" type="button">
+          <h2 class="science__text">
+            Знайти вченого, який прожив найдовше і вченого, який прожив найменше
+          </h2>
+        </button>
+      </li>
+    </ul>
+    <button class="science__button2" type="button">
+      <h2 class="science__text">
+        1. Знайти вчених, в яких співпадають перші літери імені і прізвища
+      </h2>
+    </button>
+  </div>
+</section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__nav">
+        <img src="../img/logo.webp" alt="" class="footer__logo">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <p class="footer__contact">Тел: +38 (123) 456 78 90</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__contact">E-Mail: codingmagic@gmail.com</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__contact">Facebook: CodingMagic</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__contact">Twitter: CodingMagic</p>
+            </li>
+            <li class="footer__item">
+                <p class="footer__contact">Instagram: CodingMagic </p>
+            </li>
+        </ul>
+        <div class="footer__regist">
+            <div class="footer__box">
+        <input placeholder="Ваша ел. адреса..." type="text" class="footer__mail">
+        <button class="footer__btn open__button" data-action="open--modal">Підписатися</button>
+    </div>
+        <p class="footer__description">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+    </div>
+    </div>
+    </div>
+</footer>
+
+    <section class="register">
+    
+    <div class="register__container">
+        
+
+        <p class="register__text">
+            Привіт!<br>
+            Ви потрапили на сайт інтерактивних ігор та завдань.<br>
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+            Бажаємо Вам гарно провести час!
+        </p>
+    <div class="register__box">
+    
+        <label for="username" class="register__label">Введіть своє ім’я:</label>
+        <input type="text" id="username" class="register__input" placeholder="Ваше ім’я...">
+        
+        <button class="register__button">Зберегти</button>
+    </div>
+    </div>
+    
+
+    <img src="../img/sword.webp" class="register__icon register__icon--left-top" alt="sword">
+    <img src="../img/puzzle.webp" class="register__icon register__icon--left-bottom" alt="puzzle">
+    <img src="../img/console.webp" class="register__icon register__icon--right-top" alt="code">
+    <img src="../img/game.webp" class="register__icon register__icon--right-bottom" alt="game">
+    <div class="register__backdrop"></div>
+    <button class="register__close">&times;</button>
+</div>
+</section>
+
+    <div class="backdrop">
+    <div class="modal">
+      <button type="button" class="modal__close" data-action="close-modal">
+        <img class="modal__close-icon" src="../img/icon-close.webp" alt="close">
+      </button>
+  
+      <h2 class="modal__title">Дякую за підписку!</h2>
+  
+      <div class="modal__icons">
+        <img src="../img/sword.webp" class="modal__icon modal__icon--left-top" alt="sword">
+        <img src="../img/puzzle.webp" class="modal__icon modal__icon--left-bottom" alt="puzzle">
+        <img src="../img/console.webp" class="modal__icon modal__icon--right-top" alt="console">
+        <img src="../img/game.webp" class="modal__icon modal__icon--right-bottom" alt="game">
+      </div>
+    </div>
+  </div>
+  
+
+    
+  </body>
+</html>
