@@ -37,6 +37,12 @@
     background-color: #00f7ea;
     border-radius: 50%;
     margin-left: 50px;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      transition-duration: 0.5s;
+    }
   }
 
   &__equality {

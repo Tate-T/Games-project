@@ -36,7 +36,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: top 0.5s ease, left 0.5s ease; /* Добавлен плавный переход */
+    transition: top 0.5s ease, left 0.5s ease; 
   }
 
   &__border {

@@ -73,5 +73,10 @@
     line-height: normal;
     height: 100%;
     align-self: center;
+
+    &:hover {
+      background-color: gray;
+      transition-duration: 0.5s;
+    }
   }
 }

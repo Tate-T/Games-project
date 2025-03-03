@@ -63,9 +63,14 @@
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
-
+    cursor: pointer;
     font-size: 12px;
     line-height: normal;
+
+    &:hover {
+      background-color: gray;
+      transition-duration: 0.5s;
+    }
   }
 
   &__description {
