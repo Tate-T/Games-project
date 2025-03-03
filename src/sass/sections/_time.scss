@@ -8,11 +8,23 @@
     padding-top: 36px;
   }
   &__input {
+
+
     padding: 10px 45px 10px 10px;
     gap: 10px;
     border-radius: 20px;
-    background: #d7d7d7;
     margin-right: 166px;
+    border: none;
+    background: #d7d7d7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    color: #7e7e7e;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+ 
   }
   &__calk {
     color: #000;
@@ -32,8 +44,7 @@
     font-weight: 400;
     line-height: normal;
     margin-top: 13px;
-    position: absolute;
-    left: 1030px ;
+   
 
   }
   &__box {
@@ -64,4 +75,15 @@
     line-height: normal;
     margin-top: 13px;
   }
+}
+
+
+.ghgh{
+
+  width: 100px;
+
+  position: relative;
+  left: -80px;
+  bottom: -10px;
+
 }
