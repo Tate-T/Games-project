@@ -30,8 +30,11 @@
   &__btn {
     width: 50px;
     height: 100px;
+    cursor: pointer;
+    background-color: transparent;
 
-    background: transparent;
+    
+
   }
 
   &__icon {
@@ -45,6 +48,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      transform: scale(56);
+      transition-duration: 100s;
+    }
   }
 
   &__img {
@@ -111,6 +119,8 @@
 
   &__img--tima {
     transform: translate(0px, -30px);
+
+    
   }
 
   &__img--boris {
