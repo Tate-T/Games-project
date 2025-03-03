@@ -3,11 +3,12 @@
     padding-top: 36px;
     padding-bottom: 36px;
   }
-    &__border {
+  &__border {
     border-top: solid black 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     width: 536px;
-    display: flex;
-    justify-self: center;
   }
   &__box {
     display: flex;
