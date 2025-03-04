@@ -3,6 +3,47 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  &__interactive {
+    position: relative;
+    cursor: pointer;  
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 120px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+
+  &__interactive:hover &__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &__dropdown-item {
+    font-size: 12px;
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    font-family: Montserrat Alternates;
+  }
+
+  &__dropdown-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
 
   &__navigation {
     display: flex;
@@ -27,7 +68,7 @@
 
   &__text {
     color: #000;
-    font-family: "Montserrat Alternates";
+    font-family: Montserrat Alternates;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
@@ -48,14 +89,14 @@
     background: #7a7a7a;
     margin-right: 51px;
     padding: 0;
-    
   }
 
-&__sun{
+  &__sun {
     width: 20.5px;
-height: 20px;
+    height: 20px;
     border-radius: 11px;
-}
+  }
+
   &__greetings {
     color: #000;
     text-align: right;
@@ -64,7 +105,6 @@ height: 20px;
     font-weight: 400;
     line-height: normal;
   }
-
 
   &__theme {
     display: inline-flex;
@@ -152,6 +192,5 @@ height: 20px;
     &-changer:checked + &-slider > &-icon-moon {
         display: block;
     }
-}
-
+  }
 }

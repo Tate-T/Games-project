@@ -59,32 +59,29 @@ justify-content: center;
   }
 
   .jump {
-    animation: jump 1s linear;
+    animation: jump 0.65s linear;
   }
   @keyframes jump {
     0% {
-      top: 150px;
+      top: 190px;
     }
     20% {
-        top: 140px;
+        top: 150px;
     }
     40% {
-        top: 90px;
-    }
-    50% {
-        top: 70px;
+        top: 120px;
     }
     60% {
-        top: 90px;
+        top: 110px;
     }
     80% {
-        top: 140px;
+        top: 130px;
     }
     90% {
-        top: 145px;
+        top: 150px;
     }
     100% {
-        top: 150px;
+        top: 190px;
 
     }
   }
