@@ -43,9 +43,11 @@ justify-content: center;
     width: 20px;
     height: 40px;
     background-image: url(../img/cactus.webp);
-    background-size: 35px 45px;
+    background-size: 15px 25px;
+    background-repeat: no-repeat;
+    transform: scale(2);
     position: relative;
-    top: 151px;
+    top: 170px;
     left: 580px;
     animation: cactusMove 1.3s infinite linear;
   }

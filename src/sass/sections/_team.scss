@@ -1,5 +1,6 @@
 .team {
   position: relative;
+  z-index: -10;
   &__left-photo {
     transform: rotate(270deg);
   }

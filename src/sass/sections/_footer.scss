@@ -2,12 +2,13 @@
   background: #fff;
 
   &__logo {
+    background-image: url(../img/logo1.webp);
+    background-repeat: no-repeat;
     width: 165px;
     height: 70px;
-    padding-top: 75px;
-    padding-bottom: 75px;
     margin-right: 185px;
-    box-sizing: content-box;
+    margin-top: 75px;
+    margin-bottom: 75px;
   }
 
   &__nav {
