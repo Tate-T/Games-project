@@ -25,9 +25,12 @@ html {
 
 button {
   cursor: pointer;
+  background-color: transparent;
 }
 
-
+.dark-mode a {
+  color: white;
+}
 .dark-mode {
   background-color: #333333;
   color: #ffffff;
@@ -116,7 +119,9 @@ button {
 .dark-mode .register{
   background-color: #616161;
 }
-
+.dark-mode span{
+  color: white;
+}
 
 .none{
   display: none;
