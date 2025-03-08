@@ -52,7 +52,11 @@
   }
 
   &__logo {
-    margin-right: 81px;
+   background-image: url(../img/logo.webp);
+   background-repeat: no-repeat;
+   width: 95px;
+   height: 39px;
+   margin-right: 81px;
   }
 
   &__list {

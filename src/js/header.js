@@ -1,3 +1,13 @@
+
+
+const themeChanger = document.querySelector(".header__theme-changer");
+
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+}
+
+themeChanger.addEventListener('click', toggleTheme);
+
 // const nun1 = document.getElementById(nunn1) 
 // const nuj2 = document.getElementById(nuj2) 
 // const nul3 = document.getElementById(nul3) 
@@ -88,6 +98,7 @@ nul3.addEventListener('click', () => {
 // nun1.addEventListener ("click", () => {
 //     game.stile.display = none
 // })
+
 
 
 

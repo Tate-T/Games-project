@@ -25,7 +25,96 @@ html {
 
 button {
   cursor: pointer;
-  
+}
+
+
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode .container {
+  background-color: #444444;
+}
+
+.dark-mode .header {
+  background-color: #444444;
+}
+
+.dark-mode .footer {
+  background-color: #444444;
+}
+
+.dark-mode .hero__line-year {
+  background-color: white;
+}
+
+.dark-mode .calc__border {
+  border-top: solid white 2px;
+}
+
+.dark-mode .dino__border {
+  border-top: solid white 2px;
+}
+
+.dark-mode .dino__dino {
+  background-image: url(../img/white-dino.webp);
+}
+
+.dark-mode .dino__cactus {
+  background-image: url(../img/white-cactus.webp);
+  transform: scale(3.5);
+  top: 190px;
+  background-color: none;
+}
+
+.dark-mode .socker__border {
+  border-top: solid white 2px;
+}
+
+.dark-mode .numbers__border {
+  border-top: solid white 2px;
+}
+
+.dark-mode .science__border {
+  border-top: solid white 2px;
+}
+
+.dark-mode p {
+  color: white;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode h2 {
+  color: white;
+}
+
+.dark-mode h3 {
+  color: white;
+}
+
+
+.dark-mode .science__name {
+  color: #000;
+}
+
+.dark-mode .header__logo {
+  background-image: url(../img/white-logo.webp);
+}
+
+.dark-mode .footer__logo {
+  background-image: url(../img/white-logo1.webp);
+}
+
+.dark-mode .modal {
+  background-color: #444444;
+}
+
+.dark-mode .register{
+  background-color: #616161;
 }
 
 
