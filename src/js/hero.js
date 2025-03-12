@@ -6,7 +6,8 @@ document.getElementById("checkButton").addEventListener("click", function () {
     
     if (isNaN(year)) {
         resultText.textContent = "Будь ласка, введіть дійсний рік!";
-        resultText.style.color = "black";
+
+      
         return;
     }
     
@@ -14,7 +15,7 @@ document.getElementById("checkButton").addEventListener("click", function () {
     
     if (isLeap) {
         resultText.textContent = "Ви народилися у високосний рік!";
-        resultText.style.color = "#039900";
+        resultText.style.color = "green";
     } else {
         resultText.textContent = "Ви народилися не у високосний рік!";
         resultText.style.color = "red";
@@ -30,7 +31,7 @@ document.querySelector(".hero__search-comp").addEventListener("click", function 
     
     if (isNaN(userGuess)) {
         resultText.textContent = "Будь ласка, введіть число!";
-        resultText.style.color = "black";
+     
         return;
     }
     

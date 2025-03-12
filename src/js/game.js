@@ -18,7 +18,7 @@ function computerPlay() {
 
 function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
-    resultText.style.color = "black";
+    
     return "Нічия!";
   } else if (
     (userChoice === "Камінь" && computerChoice === "Ножиці") ||
@@ -50,5 +50,5 @@ choiceButtons.forEach((button) => {
 
 showComputerChoiceButton.addEventListener("click", function () {
   resultText.textContent = `Комп'ютер обрав: ${computerChoice}`;
-  resultText.style.color = "black";
+
 });
