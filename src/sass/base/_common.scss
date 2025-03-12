@@ -155,13 +155,8 @@ button {
 }
 
 
-.dark-mode .hero__check-year{
-color: #ffffff;
-}
 
-.dark-mode #result{
-  color: #ffffff;
-}
+
 
 
 
@@ -176,7 +171,20 @@ color: #ffffff;
 
 
 
+.dark-mode #result-text {
+  color: white;
+}
 
+
+
+.dark-mode .hero__check-year {
+  color: rgb(8, 170, 8);
+}
+
+
+.dark-mode .hero__check-comp {
+  color: rgb(8, 170, 8);
+}
 
 
 
