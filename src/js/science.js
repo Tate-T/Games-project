@@ -105,7 +105,7 @@ const scientists = [
   buttons[8].addEventListener("click", () => {
     clearHighlight();
     scientists
-      .filter((s) => s.name[0] === s.surname[0])
+      .filter((s) => s.name[1] === s.surname[1])
       .forEach((scientist) => {
         items.forEach((item) => {
           if (item.textContent.includes(scientist.name)) {
