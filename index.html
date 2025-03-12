@@ -18,8 +18,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Games-project/assets/index-2c8b1e9f.js"></script>
-    <link rel="stylesheet" href="/Games-project/assets/index-786ab1f5.css">
+    <script type="module" crossorigin src="/Games-project/assets/index-677c9024.js"></script>
+    <link rel="stylesheet" href="/Games-project/assets/index-6a1bff21.css">
   </head>
 
   <body>
@@ -379,7 +379,7 @@
           1861–1953</p>
       </li>
       <li class="science__item">
-        <p class="science__name">Igor Kurchatov
+        <p class="science__name">Olga Mobius
           1903–1960</p>
       </li>
       <li class="science__item">
@@ -397,7 +397,7 @@
           1894–1964</p>
       </li>
       <li class="science__item">
-        <p class="science__name">Nikolay Pirogov
+        <p class="science__name">Nikolay Zirogov
           1810–1881</p>
       </li>
     </ul>
@@ -484,9 +484,11 @@
         </ul>
         <div class="footer__regist">
             <div class="footer__box">
-        <input placeholder="Ваша ел. адреса..." type="text" class="footer__mail">
-        <button class="footer__btn open__button" data-action="open--modal">Підписатися</button>
-    </div>
+                <form id="subscribeForm" >
+                    <input placeholder="Ваша ел. адреса..." type="email" class="footer__mail" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Введіть коректну email адресу">
+                    <button type="submit" class="footer__btn open__button" data-action="open--modal">Підписатися</button>
+                </form>
+            </div>
         <p class="footer__description">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
     </div>
     </div>
@@ -523,23 +525,27 @@
 </div>
 </section>
 
-    <div class="backdrop">
-    <div class="modal">
-      <button type="button" class="modal__close" data-action="close-modal">
-        <img class="modal__close-icon" src="data:image/webp;base64,UklGRqYAAABXRUJQVlA4WAoAAAAQAAAAEAAAEAAAQUxQSFkAAAABN0AQCJobIYQRNjwiItgLNpFsBzl4BiIhEhLg9VT08PBvJl9ERP8noFF2PhXZhpdhiIAIhmEYICJahocp86u6H+r8KoaHi4gIGIZhIAIihgGGebWQvVM2AABWUDggJgAAANACAJ0BKhEAEQA+kUSdSqWjoqGoCACwEglpAAA9o6AA/vjPGsAA" alt="close">
-      </button>
-  
-      <h2 class="modal__title">Дякую за підписку!</h2>
-  
-      <div class="modal__icons">
-        <img src="data:image/webp;base64,UklGRh4BAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSNIAAAABgFtr29rmbe1KI5iZhvFx5xWYXVHliqnGyh4AAzNwKikdGdp0Yun7kwwQEQzcto3TmL27/QP/rmx1Tdmo+Le7u7urWKc6WIGq+FNnkr+t0+VkuK0zURrFXs/yWqfMDdzzNhb73xSO615UaU5ihz+Q2U7DlPhC/1pYGCIlFrQ4zY8o2WjszQFJUc0WsJDEPlfCEDWxQOP/HCB8UvNABSVtJS0qYKZ5EKfqfyROw4HgMmnc50zHD/tJCJuuh+eIDmBTmOc9gqlCW6SsVQxhA3D4kwJWUDggJgAAANACAJ0BKh4AHgA+kUSdSqWjoqGoCACwEglpAAA9o6AA/vjPGsAA" class="modal__icon modal__icon--left-top" alt="sword">
-        <img src="data:image/webp;base64,UklGRmoBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSB0BAAABkHNb27HH6q+4s22zt1Wxs23b5pPedlJalc2WVcb2TPA+8z7vt1YiYgIgpPfGp90gCB565aoYcuUl2KUnANdNwR4AQOxBCIv4+Pj4zw4AbH7Ex8fHBzNUHfT09PToA7Dv4T6wVIHxJVBovDrpkweq5nL9ecgnJdCOiIF91bE4Eja6Ds8UaBnX3WO3nIBFAFj3Bpf0UfTv9EEvb+A0lFHU3lOK+gAgJicnZ2KesziRk5OTo6/+jUY4D4QQksQpIoSQraqKWYrzO1UOeEcNLt9f6VNQdlVdv89Qtd6WLof/mtY3PrBUgZGFiER7671I+qtyfn5m/MnrlTpkWWV4vVcCO6+letHoX01VTkYJB+WomvkqEQCoekn+PrBWMAAAVlA4ICYAAADQAgCdASoeAB4APpFEnUqlo6KhqAgAsBIJaQAAPaOgAP74zxrAAA==" class="modal__icon modal__icon--left-bottom" alt="puzzle">
-        <img src="data:image/webp;base64,UklGRpgBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSEsBAAABkGvb1rE963dl27btK3Bs1K74vlXadLZtV7Z+G8//x2afU7xMriAiJiDptrjcmwTQvRmXtdsGYWzp3AkG5tqaLTKNmLlu9g9NcP2/qngKJE7ystKVOlUMrDpAyUylCw2qGEAlQflMpaMKVQyw+CFA6XS5k2JVbXi6wFClipxQ8rYMMhRAlSrCESVvyzi4EihSNbhAWS+T0cDrIlxx0QX/je9laqs3EKR9lqkNDjy7bxSSebBb1/WeAxlkHnrhbWvLCZgPO7v10QMwC25qtnqKQCCnm1tJMA5l72399ZojIgswLhpnqBOxJakgWA9DuoN9sAzm9DG6FJbDQQcD27F/pNeBfxtwXYzbgM5A+RFtB2BJnzfA7U4AWaN0a4OHOqEbLyh/Ay02/gTB+nu6qfZEM7F7W6PxexLmyR/y/PSztmKuyJdWrFuV3AkHAFZQOCAmAAAA0AIAnQEqHgAeAD6RRJ1KpaOioagIALASCWkAAD2joAD++M8awAA=" class="modal__icon modal__icon--right-top" alt="console">
-        <img src="data:image/webp;base64,UklGRhoBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSM4AAAABgCPbtirldNS4xzyG4LGnZOT0ELC0ZQYUM7Dc3X0CP8MlpB+86GdUbfTVpUcQEROgiYD5S1558LHgI99g4oV+xZIqtp+Al508lA3aipvbObuOR4AFswUORnOPjBtVkbZLYywbteIlDXBqpCuKajpgxmoAQuDRWWnkmo8DJzOpoUY/zf70/H8aDWk0UFY0qaJ9ZWSapGyt3fxrn7t/bDKb5P2BRGaag8TZuQRCp90qySyhyWxi1am0JLPISgv02w3wPAE+Fnws5JV/wTxMCFZQOCAmAAAA0AIAnQEqHgAeAD6RRJ1KpaOioagIALASCWkAAD2joAD++M8awAA=" class="modal__icon modal__icon--right-bottom" alt="game">
-      </div>
+
+
+    <button class="open__button">Open Modal</button>
+
+<div class="backdrop">
+  <div class="modal">
+    <button type="submit" class="modal__close">
+      <img class="modal__close-icon" src="data:image/webp;base64,UklGRqYAAABXRUJQVlA4WAoAAAAQAAAAEAAAEAAAQUxQSFkAAAABN0AQCJobIYQRNjwiItgLNpFsBzl4BiIhEhLg9VT08PBvJl9ERP8noFF2PhXZhpdhiIAIhmEYICJahocp86u6H+r8KoaHi4gIGIZhIAIihgGGebWQvVM2AABWUDggJgAAANACAJ0BKhEAEQA+kUSdSqWjoqGoCACwEglpAAA9o6AA/vjPGsAA" alt="close">
+    </button>
+
+    <h2 class="modal__title">Дякую за підписку!</h2>
+
+    <div class="modal__icons">
+      <img src="data:image/webp;base64,UklGRh4BAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSNIAAAABgFtr29rmbe1KI5iZhvFx5xWYXVHliqnGyh4AAzNwKikdGdp0Yun7kwwQEQzcto3TmL27/QP/rmx1Tdmo+Le7u7urWKc6WIGq+FNnkr+t0+VkuK0zURrFXs/yWqfMDdzzNhb73xSO615UaU5ihz+Q2U7DlPhC/1pYGCIlFrQ4zY8o2WjszQFJUc0WsJDEPlfCEDWxQOP/HCB8UvNABSVtJS0qYKZ5EKfqfyROw4HgMmnc50zHD/tJCJuuh+eIDmBTmOc9gqlCW6SsVQxhA3D4kwJWUDggJgAAANACAJ0BKh4AHgA+kUSdSqWjoqGoCACwEglpAAA9o6AA/vjPGsAA" class="modal__icon modal__icon--left-top" alt="sword">
+      <img src="data:image/webp;base64,UklGRmoBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSB0BAAABkHNb27HH6q+4s22zt1Wxs23b5pPedlJalc2WVcb2TPA+8z7vt1YiYgIgpPfGp90gCB565aoYcuUl2KUnANdNwR4AQOxBCIv4+Pj4zw4AbH7Ex8fHBzNUHfT09PToA7Dv4T6wVIHxJVBovDrpkweq5nL9ecgnJdCOiIF91bE4Eja6Ds8UaBnX3WO3nIBFAFj3Bpf0UfTv9EEvb+A0lFHU3lOK+gAgJicnZ2KesziRk5OTo6/+jUY4D4QQksQpIoSQraqKWYrzO1UOeEcNLt9f6VNQdlVdv89Qtd6WLof/mtY3PrBUgZGFiER7671I+qtyfn5m/MnrlTpkWWV4vVcCO6+letHoX01VTkYJB+WomvkqEQCoekn+PrBWMAAAVlA4ICYAAADQAgCdASoeAB4APpFEnUqlo6KhqAgAsBIJaQAAPaOgAP74zxrAAA==" class="modal__icon modal__icon--left-bottom" alt="puzzle">
+      <img src="data:image/webp;base64,UklGRpgBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSEsBAAABkGvb1rE963dl27btK3Bs1K74vlXadLZtV7Z+G8//x2afU7xMriAiJiDptrjcmwTQvRmXtdsGYWzp3AkG5tqaLTKNmLlu9g9NcP2/qngKJE7ystKVOlUMrDpAyUylCw2qGEAlQflMpaMKVQyw+CFA6XS5k2JVbXi6wFClipxQ8rYMMhRAlSrCESVvyzi4EihSNbhAWS+T0cDrIlxx0QX/je9laqs3EKR9lqkNDjy7bxSSebBb1/WeAxlkHnrhbWvLCZgPO7v10QMwC25qtnqKQCCnm1tJMA5l72399ZojIgswLhpnqBOxJakgWA9DuoN9sAzm9DG6FJbDQQcD27F/pNeBfxtwXYzbgM5A+RFtB2BJnzfA7U4AWaN0a4OHOqEbLyh/Ay02/gTB+nu6qfZEM7F7W6PxexLmyR/y/PSztmKuyJdWrFuV3AkHAFZQOCAmAAAA0AIAnQEqHgAeAD6RRJ1KpaOioagIALASCWkAAD2joAD++M8awAA=" class="modal__icon modal__icon--right-top" alt="console">
+      <img src="data:image/webp;base64,UklGRhoBAABXRUJQVlA4WAoAAAAQAAAAHQAAHQAAQUxQSM4AAAABgCPbtirldNS4xzyG4LGnZOT0ELC0ZQYUM7Dc3X0CP8MlpB+86GdUbfTVpUcQEROgiYD5S1558LHgI99g4oV+xZIqtp+Al508lA3aipvbObuOR4AFswUORnOPjBtVkbZLYywbteIlDXBqpCuKajpgxmoAQuDRWWnkmo8DJzOpoUY/zf70/H8aDWk0UFY0qaJ9ZWSapGyt3fxrn7t/bDKb5P2BRGaag8TZuQRCp90qySyhyWxi1am0JLPISgv02w3wPAE+Fnws5JV/wTxMCFZQOCAmAAAA0AIAnQEqHgAeAD6RRJ1KpaOioagIALASCWkAAD2joAD++M8awAA=" class="modal__icon modal__icon--right-bottom" alt="game">
     </div>
   </div>
-  
+</div>
+
 
     
   </body>
