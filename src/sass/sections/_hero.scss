@@ -72,7 +72,6 @@
       margin-bottom: 25px;
 
   }
-
   &__input-year,
   &__input-comp {
       width: 190px;
@@ -107,13 +106,13 @@
   &__check-year {
       text-align: center; 
       margin-top: 10px;
-      margin-left: 20px;
+      color: green;
+      margin-left: 110px;
+
   }
 
 
   @media (max-width: 768px) {
-
-
 
       &__title-Popular {
           font-size: 20px;
@@ -142,10 +141,12 @@
           font-size: 12px;
       }
 
+
       &__search-year,
       &__search-comp {
           border-radius: 20px;
           width: 50px;
+
       }
 
       &__check-comp,
@@ -153,6 +154,7 @@
           text-align: center;
           margin-top: 10px;
       }
+
   }
 
   @media (max-width: 480px) {
@@ -188,4 +190,6 @@
           text-align: center; 
       }
   }
+
 }
+
