@@ -1,10 +1,10 @@
-.dino{
-display: flex;
-justify-content: center;
+.dino {
+  display: flex;
+  justify-content: center;
 
-.container {
+  .container {
     padding-bottom: 36px;
-}
+  }
 
   &__border {
     border-top: solid black 2px;
@@ -12,6 +12,10 @@ justify-content: center;
     display: flex;
     justify-self: center;
     padding-bottom: 36px;
+    max-width: 80%;
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+    }
   }
   &__title {
     color: #000;
@@ -36,7 +40,6 @@ justify-content: center;
     background-size: 50px 50px;
     position: relative;
     top: 190px;
-    
   }
 
   &__cactus {
@@ -68,23 +71,22 @@ justify-content: center;
       top: 190px;
     }
     20% {
-        top: 150px;
+      top: 150px;
     }
     40% {
-        top: 120px;
+      top: 120px;
     }
     60% {
-        top: 110px;
+      top: 110px;
     }
     80% {
-        top: 130px;
+      top: 130px;
     }
     90% {
-        top: 150px;
+      top: 150px;
     }
     100% {
-        top: 190px;
-
+      top: 190px;
     }
   }
 }

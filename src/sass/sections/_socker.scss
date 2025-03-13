@@ -3,7 +3,7 @@
     padding-top: 36px;
     padding-bottom: 36px;
   }
-  
+
   &__title {
     color: #000;
     font-family: "Montserrat Alternates";
@@ -17,14 +17,19 @@
   &__field {
     display: flex;
     position: relative;
-    width: 720px;
-    height: 220px;
+    width: 450px;
+    height: 200px;
     flex-shrink: 0;
     border-radius: 37px;
     border: 2px solid #000;
     background: #5abb58;
     margin-top: 36px;
     justify-self: center;
+
+    @media screen and (min-width: 768px) {
+      width: 720px;
+      height: 220px;
+    }
   }
 
   &__ball {
@@ -35,7 +40,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: top 0.5s ease, left 0.5s ease; 
+    transition: top 0.5s ease, left 0.5s ease;
   }
 
   &__border {
@@ -44,5 +49,9 @@
     left: 50%;
     transform: translate(-50%);
     width: 536px;
+    max-width: 50%;
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+    }
   }
 }
