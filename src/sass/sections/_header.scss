@@ -7,7 +7,6 @@
   left: 0;
   width: 100%;
   z-index: 99999;
-  width: 480px;
  
   .container {
     position: relative;
@@ -66,7 +65,7 @@
    background-repeat: no-repeat;
    width: 95px;
    height: 39px;
-   margin-right: 200px;
+   margin-right: 180px;
 
    @media screen and (min-width: 1090px) {
     margin-right: 81px;
