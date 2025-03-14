@@ -3,9 +3,6 @@
   justify-content: center;
 
 
-
-.container {
-
   .container {
 
     padding-bottom: 36px;
@@ -74,10 +71,6 @@
   @keyframes cactusMove {
     0% {
       left: 410px;
-
-      @media screen and (min-width: 1090px) {
-        left: 580px;
-      }
     }
     100% {
       left: -20px;
@@ -107,7 +100,8 @@
       top: 150px;
     }
     100% {
-      top: 190px;
+        top: 190px;
     }
+  }
   }
 }
