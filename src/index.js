@@ -11,3 +11,4 @@ import "./js/science.js";
 import "./js/footer.js";
 import "./js/register.js";
 import "./js/footer-modal.js";
+import "./js/header-menu.js";
