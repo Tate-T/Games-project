@@ -18,8 +18,9 @@ function computerPlay() {
 
 function determineWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
-    
+    resultText.style.color = "rgb(248, 149, 0)";
     return "Нічия!";
+    
   } else if (
     (userChoice === "Камінь" && computerChoice === "Ножиці") ||
     (userChoice === "Ножиці" && computerChoice === "Папір") ||
