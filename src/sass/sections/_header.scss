@@ -7,6 +7,7 @@
   left: 0;
   width: 100%;
   z-index: 99999;
+  width: 480px;
  
   .container {
     position: relative;
@@ -65,13 +66,21 @@
    background-repeat: no-repeat;
    width: 95px;
    height: 39px;
-   margin-right: 81px;
+   margin-right: 200px;
+
+   @media screen and (min-width: 1090px) {
+    margin-right: 81px;
+  }
   }
 
   &__list {
-    display: flex;
-    margin-right: 361px;
-    gap: 50px;
+   display: none;
+
+    @media screen and (min-width: 1090px) {
+      display: flex;
+      margin-right: 350px;
+      gap: 50px;
+    }
   }
 
   &__item {
@@ -111,12 +120,17 @@
   }
 
   &__greetings {
-    color: #000;
-    text-align: right;
-    font-family: "Montserrat Alternates";
-    font-size: 12px;
-    font-weight: 400;
-    line-height: normal;
+   display: none;
+
+    @media screen and (min-width: 1090px) {
+      display: block;
+      color: #000;
+      text-align: right;
+      font-family: "Montserrat Alternates";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 
   &__theme {
@@ -126,10 +140,14 @@
 
     width: 40px;
     height: 20px;
-    margin-right: auto;
+    margin-right: 1px;
 
     border-radius: 11px;
     background: gray;
+
+    @media screen and (min-width: 1090px) {
+   margin-right: auto;
+    }
 
     &-changer {
         width: 0;
@@ -146,8 +164,9 @@
 
         cursor: pointer;
         border-radius: 11px;
-        background-color: gray;
+        background-color: rgb(153, 150, 150);
         transition: 0.3s;
+        
     }
 
     &-slider::before {
@@ -204,6 +223,18 @@
 
     &-changer:checked + &-slider > &-icon-moon {
         display: block;
+    }
+  }
+
+  &__menu {
+    width: 45px;
+  }
+
+  &__burger {
+    background-color: none;
+
+    @media screen and (min-width: 1090px) {
+      display: none;
     }
   }
 }
