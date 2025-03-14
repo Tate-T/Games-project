@@ -70,10 +70,6 @@ justify-content: center;
   @keyframes cactusMove {
     0% {
       left: 410px;
-
-      @media screen and (min-width: 1090px) {
-        left: 580px;
-      }
     }
     100% {
       left: -20px;
@@ -104,7 +100,6 @@ justify-content: center;
     }
     100% {
         top: 190px;
-
     }
   }
 }
