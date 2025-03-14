@@ -2,7 +2,12 @@
   display: flex;
   justify-content: center;
 
+
+
+.container {
+
   .container {
+
     padding-bottom: 36px;
   }
 
@@ -11,7 +16,10 @@
     width: 536px;
     display: flex;
     justify-self: center;
+    justify-content: center;
     padding-bottom: 36px;
+    max-width: 50%;
+    @media screen and (min-width: 1090px) {
     max-width: 80%;
     @media screen and (min-width: 768px) {
       max-width: 100%;
@@ -27,10 +35,15 @@
   }
 
   &__game {
-    width: 720px;
+    width: 430px;
     height: 241px;
     border-bottom: 1px solid black;
     margin: auto;
+
+    @media screen and (min-width: 1090px) {
+      width: 720px;
+      height: 241px;
+    }
   }
 
   &__dino {
@@ -51,12 +64,20 @@
     transform: scale(2);
     position: relative;
     top: 170px;
-    left: 580px;
+    left: 410px;
     animation: cactusMove 1.3s infinite linear;
+
+    @media screen and (min-width: 1090px) {
+      left: 580px;
+    }
   }
   @keyframes cactusMove {
     0% {
-      left: 580px;
+      left: 410px;
+
+      @media screen and (min-width: 1090px) {
+        left: 580px;
+      }
     }
     100% {
       left: -20px;
