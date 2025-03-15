@@ -37,14 +37,23 @@ const scientists = [
   });
   
   buttons[1].addEventListener("click", () => {
-    alert("Albert Einstein родился в 1879 году");
+    clearHighlight();
+    items.forEach((item) => {
+      if (item.textContent.includes("Albert")) {
+        item.style.background = "rgba(0, 0, 0, 0.5)";
+      }
+    });
   });
+  
   
   buttons[2].addEventListener("click", () => {
     clearHighlight();
-    const sorted = [...items].sort((a, b) => a.textContent.localeCompare(b.textContent));
+    const sorted = [...items].sort((a, b) => 
+      a.textContent.trim().localeCompare(b.textContent.trim())
+    );
     document.querySelector(".science__list").replaceChildren(...sorted);
   });
+  
   
   buttons[3].addEventListener("click", () => {
     clearHighlight();
@@ -62,33 +71,45 @@ const scientists = [
   
   buttons[4].addEventListener("click", () => {
     clearHighlight();
+    
     const sorted = [...items].sort((a, b) => {
-      const ageA = scientists.find((s) => a.textContent.includes(s.name));
-      const ageB = scientists.find((s) => b.textContent.includes(s.name));
-      return ageB.dead - ageB.born - (ageA.dead - ageA.born);
+      const scientistA = scientists.find((s) => a.textContent.includes(s.name));
+      const scientistB = scientists.find((s) => b.textContent.includes(s.name));
+  
+      if (scientistA && scientistB) {
+        const ageA = scientistA.dead - scientistA.born;
+        const ageB = scientistB.dead - scientistB.born;
+        return ageB - ageA; 
+      }
+      return 0;
     });
+  
     document.querySelector(".science__list").replaceChildren(...sorted);
   });
+  
   
   buttons[5].addEventListener("click", () => {
     clearHighlight();
     items.forEach((item) => {
-      if (item.textContent.startsWith("A")) {
-        item.remove();
+      const name = item.textContent.trim().split(" ")[0];
+      if (name.startsWith("A")) {
+        item.style.background = "rgba(0, 0, 0, 0.5)";
       }
     });
   });
   
-  buttons[6].addEventListener("click", () => {
-    clearHighlight();
-    const latest = scientists.reduce((latest, s) => (s.born > latest.born ? s : latest));
-    items.forEach((item) => {
-      if (item.textContent.includes(latest.name)) {
-        item.style.background = "rgba(0, 0, 0, 0.5)";
-        
-      }
-    });
+buttons[6].addEventListener("click", () => {
+  clearHighlight();
+
+  items.forEach((item) => {
+    if (item.textContent.includes("Olga")) {
+      item.style.background = "rgba(0, 0, 0, 0.5)";
+    }
   });
+});
+
+  
+  
   
   buttons[7].addEventListener("click", () => {
     clearHighlight();

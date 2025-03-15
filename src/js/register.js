@@ -1,7 +1,8 @@
 const register = document.querySelector(".register"),
       closeBtn = document.querySelector(".register__close"),
       saveBtn = document.querySelector(".register__button"),
-      input = document.querySelector(".register__input");
+      input = document.querySelector(".register__input"),
+      greeting = document.querySelector(".header__greetings");
 
 document.body.classList.add("no-scroll"); 
 closeBtn.addEventListener("click", closeModal);
@@ -14,7 +15,8 @@ function closeModal() {
 
 function saveName() {
     if (input.value.trim()) {
-        alert(`Ласкаво просимо, ${input.value.trim()}!`);
+        
+        greeting.textContent = `Вітаємо, ${input.value.trim()}!`
         closeModal();
     } else {
         input.placeholder = "Введіть ім'я!";
