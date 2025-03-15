@@ -43,6 +43,7 @@
       font-family: Montserrat Alternates;
       margin-bottom: 36px;
       text-align: center;
+
   }
 
   &__line-year {
@@ -101,6 +102,11 @@
       }
   }
 
+  img {
+
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   &__check-comp,
   &__check-year {
@@ -108,7 +114,8 @@
       margin-top: 10px;
       color: green;
       margin-left: 110px;
-
+      min-width: 250px;
+      font-family: Montserrat Alternates;
   }
 
 
@@ -153,6 +160,8 @@
       &__check-year {
           text-align: center;
           margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
       }
 
   }
