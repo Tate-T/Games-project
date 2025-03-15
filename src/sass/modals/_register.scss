@@ -35,6 +35,20 @@
     font-family: "Montserrat Alternates", sans-serif;
 
 
+    @media (max-width: 480px) {
+        width: 400px;
+        height: 300px;
+
+        .register__icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .register__input {
+            width: 119;
+            height: 25;
+        }
+    }
 
 &__container {
     max-width: 500px;
