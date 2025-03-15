@@ -4,14 +4,14 @@
     padding-bottom: 36px;
   }
   &__border {
-    border-top: solid black 2px;
+    background-color: black;
+    height: 1px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    max-width: 80%;
-    width: 536px;
-    @media screen and (min-width:768px) {
-      max-width: 100%;
+    width: 368px;
+    @media screen and (min-width: 768px) {
+      width: 536px;
     }
   }
   &__box {

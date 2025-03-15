@@ -1,24 +1,18 @@
 .dino {
-  display: flex;
-  justify-content: center;
-
-
   .container {
-
     padding-bottom: 36px;
+    padding-top: 36px;
   }
 
   &__border {
-    border-top: solid black 2px;
-    width: 536px;
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    padding-bottom: 36px;
-    max-width: 80%;
-
-    @media screen and (min-width: 1090px) {
-    max-width: 100%;
+    background-color: black;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 368px;
+    @media screen and (min-width: 768px) {
+      width: 536px;
     }
   }
   &__title {
@@ -103,7 +97,7 @@
       top: 150px;
     }
     100% {
-        top: 190px;
+      top: 190px;
     }
   }
-  }
+}
