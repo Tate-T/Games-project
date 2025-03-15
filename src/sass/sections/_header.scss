@@ -10,6 +10,7 @@
  
   .container {
     position: relative;
+    
   }
   &__interactive {
     position: relative;
@@ -241,4 +242,9 @@
       display: none;
     }
   }
+}
+
+
+.all {
+  padding-bottom: 80px;
 }
