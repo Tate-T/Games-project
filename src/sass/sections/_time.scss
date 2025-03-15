@@ -18,17 +18,10 @@
     font-weight: 400;
     line-height: normal;
     align-self: center;
-  
 
-
-   
-  
     @media screen and (min-width: 1090px) {
       margin-right: 166px;
     }
-
-
-
   }
   &__calk {
     color: #000;
@@ -49,26 +42,12 @@
     line-height: normal;
     margin-top: 13px;
     max-width: 150px;
+    min-width: 150px;
   }
   &__box {
     display: flex;
-    justify-content: center;
-   
+    justify-self: center;
     max-width: 736px;
-
-
-
-   
-  
-    @media screen and (min-width: 1090px) {
-    margin-left: 150px;
-    }
-
-
-
-
-
-
   }
   &__button {
     background-color: #00f7ea;
@@ -103,11 +82,17 @@
   }
 
   @media screen and (min-width: 1090px) {
-    width: 100px;
+    width: 170px;
     position: relative;
     left: -80px;
     display: block;
     bottom: -10px;
+    text-align: right;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 
@@ -122,7 +107,6 @@
   left: -33px;
   cursor: pointer;
 
-
   @media screen and (min-width: 768px) {
     left: -30px;
     bottom: 0px;
@@ -131,11 +115,7 @@
   @media screen and (min-width: 1090px) {
     left: -200px;
     bottom: 0px;
-    }
-
-
-
-
+  }
 
   &:hover {
     background-color: gray;
