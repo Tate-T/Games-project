@@ -12,9 +12,11 @@
     line-height: normal;
     text-align: center;
     margin-bottom: 36px;
+    margin-top: 36px;
   }
   &__border {
-    border-top: solid black 2px;
+    background-color: black;
+    height: 1px;
     width: 536px;
     display: flex;
     justify-self: center;
