@@ -44,8 +44,6 @@
     }
 
     @media screen and (min-width: 1090px) {
-      display: block;
-      max-width: 345px;
       margin-top: 97px;
       margin-left: 130px;
     }
@@ -53,14 +51,23 @@
 
   &__neger{
 
+
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: column;
   }
+
+  @media screen and (min-width: 1090px) {
+    flex-direction: row;
+}
 }
 
   &__box {
     display: flex;
+
+    @media screen and (min-width: 1090px) {
+      flex-direction: row;
+  }
   }
 
   &__mail {
@@ -81,6 +88,10 @@
 
     @media screen and (min-width: 768px) {
     margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1090px) {
+    margin-right: 20px;
   }
   }
 
@@ -104,6 +115,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       background-color: grey;
       transition-duration: 0.6s;
     }
+
+    @media screen and (min-width: 1090px) {
+      height: 37px;
+  }
   }
 
   &__description {
@@ -119,5 +134,17 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       width: 200px;
       margin-top: 10px;
     }
+
+    @media screen and (min-width: 1090px) {
+      width: 300px;
+      margin-top: 3px;
+    }
   }
+}
+
+form {
+
+  @media screen and (min-width: 1090px) {
+    display: flex;
+}
 }
