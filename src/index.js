@@ -12,3 +12,4 @@ import "./js/footer.js";
 import "./js/register.js";
 import "./js/footer-modal.js";
 import "./js/header-menu.js";
+import "./js/dino-modal.js";
