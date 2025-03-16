@@ -52,7 +52,7 @@ function checkCollision() {
             isGameStarted = false;
             clearInterval(gameLoop);
             cactus.style.animation = "none";
-            dinoText.textContent = "Гру закінчено! Оновіть сторінку, щоб почати заново."
+            dinoText.textContent = "Гру закінчено! Натисніть на кнопку, щоб почати спочатку"
         }
     }, 10);
 }
