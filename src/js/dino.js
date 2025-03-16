@@ -1,6 +1,8 @@
 const dino = document.querySelector(".dino__dino");
 const gameArea = document.querySelector(".dino__game");
 const cactus = document.querySelector(".dino__cactus");
+const getBtn = document.querySelector('.dino__start');
+const dinoText = document.querySelector('.dino__text');
 let isJumping = false;
 let isGameOver = false;
 let isGameStarted = false;
@@ -12,10 +14,11 @@ function startGame() {
         isGameOver = false;
         cactus.style.animation = "cactusMove 1.3s infinite linear";
         checkCollision();
+        dinoText.textContent = ""
     }
 }
 
-gameArea.addEventListener("click", startGame);
+getBtn.addEventListener("click", startGame);
 
 document.addEventListener("keydown", (e) => {
     if (e.code === "Space" && !isJumping && !isGameOver) {
@@ -49,7 +52,7 @@ function checkCollision() {
             isGameStarted = false;
             clearInterval(gameLoop);
             cactus.style.animation = "none";
-            alert("Гру закінчено! Оновіть сторінку, щоб почати заново.");
+            dinoText.textContent = "Гру закінчено! Оновіть сторінку, щоб почати заново."
         }
     }, 10);
 }
