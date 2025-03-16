@@ -49,6 +49,27 @@
     background-size: 50px 50px;
     position: relative;
     top: 190px;
+  } 
+
+  &__btn {
+    border-radius: 20px;
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+    font-family: "Montserrat Alternates";
+    cursor: pointer;
+    font-size: 12px;
+    line-height: normal;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-self: center;
+    margin-top: 15px;
+
+&:hover {
+  background-color: grey;
+  transition-duration: 0.6s;
+}
+
   }
 
   &__cactus {
@@ -76,7 +97,7 @@
       }
     }
     100% {
-      left: -20px;
+      left: 2px;
     }
   }
 

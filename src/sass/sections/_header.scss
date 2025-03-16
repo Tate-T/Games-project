@@ -17,6 +17,14 @@
     cursor: pointer;  
   }
 
+  &__menu {
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 39px;
+
+  }
+
   &__dropdown {
     position: absolute;
     z-index: 10;
